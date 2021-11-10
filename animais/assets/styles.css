@@ -1,0 +1,238 @@
+body {
+  font-family: 'Amatic SC', cursive;
+  font-size: 2.1em;    
+  /* background: url("img/shark.png") repeat; */
+  background: repeating-linear-gradient(90deg, #c9c3c780 0, #c9c3c783 5%, transparent 0, transparent 50%), repeating-linear-gradient(180deg, #c9c3c78e 0, #c9c3c77c 5%, transparent 0, transparent 50%);
+        background-size: 1em 1em;
+        background-color: #f1eee4dc;
+        opacity: 0.85
+}
+
+.main {
+  text-align: center;
+}
+
+
+
+.sparkles {
+  width: 100px;
+  height: 100px;
+ top: 20px
+}
+
+.animals {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 9%;
+}
+
+.animg {
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  animation-duration: 2s;
+  animation-name: move;
+  animation-iteration-count:initial ;
+}
+
+/*
+@keyframes move {
+  from {
+    width: 90px;
+  }
+
+  50% {
+    width: 70px;
+  }
+
+  60% {
+    width: 30px;
+  }
+
+  70% {
+    width: 40px;
+  }
+
+  to {
+    width: 80px;
+  }
+}
+*/
+
+.animal {
+  margin: 20px;
+  display: inline-block;
+  width: 150px;
+  height: 166px;
+  border-radius: 10%;
+  transform: scale(1);
+  transition: transform 500ms;
+  box-shadow: 6px 5px 10px rgb(124, 122, 122);
+
+  border: 4px solid 
+}
+
+.animal:hover {
+  transform: scale(1.05);
+}
+
+.animal:active {
+  transform: scale(.8);
+  box-shadow: 3px 3px 10px rgb(124, 122, 122);
+
+}
+
+.anibtt  {
+  background: transparent;
+  border: 1px solid rgba(0, 0, 0, 0);
+  display: block;
+  width: 90%;
+  height: 40px;
+  margin-top: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5%;
+  font-family: 'Josefin Slab', serif;
+  font-size: 0.45em;
+}
+
+.cat {
+  background-color: #d6aaec;
+}
+
+.bat {
+  background-color: #d6d4d6;
+}
+
+.cow {
+  background-color: rgb(245, 209, 174);
+}
+
+.pig {
+  background-color: rgb(255, 205, 212);
+}
+
+.rat {
+  background-color: #d4fbff;
+}
+
+.sheep {
+  background-color: wheat;
+}
+
+.rabbit {
+  background-color: #f0eeee;
+}
+
+.elephant {
+  background-color: #d4d3d3;
+}
+
+.dog {
+  background-color: #fcdbba;
+}
+
+.rooster {
+  background-color: #d8d8d8;
+}
+
+.dinosaur {
+  background-color: rgb(178, 245, 178);
+}
+
+.owl {
+  background-color: rgb(241, 241, 168);
+}
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 500px) {
+
+  body {
+    font-size: 1.8em; 
+  }
+
+  .animals {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 9%;
+  
+  }
+
+  .animal {
+    margin: 10px;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+  }
+  
+  .anibtt  {
+    background: transparent;
+    border:  1px solid rgba(0, 0, 0, 0.295);
+    display: block;
+    width: 80%;
+    height: 30px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10%;
+    font-family: 'Josefin Slab', serif;
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+
+  body {
+    font-size: 1.8em; 
+  }
+
+  .animal {
+    margin: 10px;
+    display: inline-block;
+    width: 100px;
+    height: 120px;
+    border-radius: 10%;
+  }
+
+  .animg {
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 6px;
+    margin-bottom: 0px;
+    animation-duration: 2s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+  }
+
+  .anibtt  {
+    background: transparent;
+    border:  1px solid rgba(0, 0, 0, 0.295);
+    display: block;
+    width: 80%;
+    height: 24px;
+    margin-top: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10%;
+    font-family: 'Josefin Slab', serif;
+    font-size: 0.5em;
+  }
+
+}
